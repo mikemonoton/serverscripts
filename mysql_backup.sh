@@ -13,6 +13,6 @@ DATE=$(date +%Y-%m-%d-%H%M%S)
 PASSWD_DBNAME=streng_geheimes_passwort
 
 # Backup Datenbank "DBNAME"
-mysqldump --opt -Q -u dbuser -B dbname -p$PASSWD_DBNAME >/srv/backup/mysql_backup/DBNAME.bak.db.$DATE.sql
+mysqldump --opt -Q -u dbuser -B dbname -p$PASSWD_DBNAME >/pfad/zum/mysql_backup/DBNAME.bak.db.$DATE.sql
 
 exit $?
